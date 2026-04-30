@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Inschrijven — Tandartsenpraktijk Vijfhuizen</title>
+<meta name="description" content="Schrijf u in als nieuwe patiënt bij Tandartsenpraktijk Vijfhuizen — vul het inschrijfformulier in zes overzichtelijke stappen in." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/tokens.css" />
+<link rel="stylesheet" href="assets/css/base.css" />
+<link rel="stylesheet" href="assets/css/components.css" />
+<link rel="stylesheet" href="assets/css/pages.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Direct naar inhoud</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><span class="mark">v</span><span>Vijfhuizen<small>Tandartsenpraktijk</small></span></a>
+    <nav class="nav" aria-label="Hoofdmenu"><a href="index.html">Home</a>
+      <div class="nav-item"><a href="praktijk.html" class="nav-trigger">Onze praktijk</a><div class="dropdown"><a href="praktijk.html">Onze praktijk</a><a href="praktijk.html#missie">Missie &amp; visie</a><a href="team.html">Team</a><a href="afspraken.html">Afspraken</a><a href="klachten.html">Klachten</a><a href="wijzigingen.html">Wijzigingen doorgeven</a></div></div>
+      <a href="specialisaties.html">Specialisaties</a>
+      <a href="https://www.infomedics.nl/" target="_blank" rel="noopener">Nota online</a>
+      <a href="https://www.plein.nl/verzorging/mondverzorging/" target="_blank" rel="noopener">Online winkel</a>
+      <div class="nav-item"><a href="contact.html" class="nav-trigger">Contact</a><div class="dropdown"><a href="contact.html">Contact</a><a href="spoed.html">Spoed</a><a href="inschrijven.html">Inschrijven</a></div></div>
+      <a href="vacature.html">Vacature</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-emerg" href="spoed.html">Spoed</a>
+      <a class="btn btn-primary" href="inschrijven.html">Inschrijven <span class="arr">→</span></a>
+      <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<aside class="mobile-drawer" aria-label="Mobiel menu">
+  <nav>
+    <details><summary>Praktijk +</summary><a href="praktijk.html">Onze praktijk</a><a href="team.html">Team</a><a href="afspraken.html">Afspraken</a><a href="klachten.html">Klachten</a><a href="wijzigingen.html">Wijzigingen</a></details>
+    <a href="specialisaties.html">Specialisaties</a>
+    <a href="https://www.infomedics.nl/" target="_blank" rel="noopener">Nota online</a>
+    <a href="https://www.plein.nl/verzorging/mondverzorging/" target="_blank" rel="noopener">Online winkel</a>
+    <details><summary>Contact +</summary><a href="contact.html">Contact</a><a href="spoed.html">Spoed</a><a href="inschrijven.html">Inschrijven</a></details>
+    <a href="vacature.html">Vacature</a>
+  </nav>
+</aside>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><span><a href="index.html">Home</a></span><span>Inschrijven</span></div>
+      <span class="eyebrow">Nieuwe patiënt</span>
+      <h1 data-reveal="line">Schrijf u in <em>bij onze praktijk</em>.</h1>
+      <p class="lead" data-reveal style="margin-top:24px;">Welkom. Vul het formulier in zes overzichtelijke stappen in — wij nemen daarna contact met u op voor een eerste afspraak.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="form-card">
+
+        <form id="inschrijfForm" action="mailto:tandartsenpraktijkvijfhuizen@gmail.com" method="post" enctype="text/plain" novalidate>
+
+          <!-- STAP 1: Persoonsgegevens -->
+          <section class="step-panel is-active" data-panel="1">
+            <span class="eyebrow">Stap 1 van 6</span>
+            <h2>Persoonsgegevens</h2>
+            <p class="sub">Velden met een * zijn verplicht.</p>
+
+            <div class="field-row">
+              <div class="field"><label for="i-vl">Voorletters *</label><input id="i-vl" name="voorletters" required /><span class="field-error"></span></div>
+              <div class="field"><label for="i-voor">Voornaam *</label><input id="i-voor" name="voornaam" required /><span class="field-error"></span></div>
+            </div>
+            <div class="field-row">
+              <div class="field"><label for="i-tussen">Tussenvoegsel</label><input id="i-tussen" name="tussenvoegsel" /></div>
+              <div class="field"><label for="i-achter">Achternaam *</label><input id="i-achter" name="achternaam" required /><span class="field-error"></span></div>
+            </div>
+            <div class="field-row">
+              <div class="field"><label for="i-geb">Geboortedatum *</label><input id="i-geb" type="date" name="geboortedatum" required /><span class="field-error"></span></div>
+              <div class="field">
+                <label>Geslacht</label>
+                <div class="radio-group">
+                  <label><input type="radio" name="geslacht" value="Vrouw" /> <span>Vrouw</span></label>
+                  <label><input type="radio" name="geslacht" value="Man" /> <span>Man</span></label>
+                  <label><input type="radio" name="geslacht" value="Anders" /> <span>Anders</span></label>
+                </div>
+              </div>
+            </div>
+
+            <div class="step-actions">
+              <span></span>
+              <button type="button" class="btn btn-primary" data-next="2">Volgende stap <span class="arr">→</span></button>
+            </div>
+          </section>
+
+          <!-- STAP 2: Adresgegevens -->
+          <section class="step-panel" data-panel="2">
+            <span class="eyebrow">Stap 2 van 6</span>
+            <h2>Adresgegevens</h2>
+
+            <div class="field-row">
+              <div class="field" style="flex:2;"><label for="i-straat">Straatnaam *</label><input id="i-straat" name="straat" required /><span class="field-error"></span></div>
+              <div class="field" style="flex:1;"><label for="i-huis">Huisnummer *</label><input id="i-huis" name="huisnummer" required /><span class="field-error"></span></div>
+            </div>
+            <div class="field-row">
+              <div class="field"><label for="i-pc">Postcode *</label><input id="i-pc" name="postcode" placeholder="1234 AB" required /><span class="field-error"></span></div>
+              <div class="field"><label for="i-plaats">Woonplaats *</label><input id="i-plaats" name="woonplaats" required /><span class="field-error"></span></div>
+            </div>
+            <div class="field-row">
+              <div class="field"><label for="i-mob">Mobiel telefoonnummer *</label><input id="i-mob" type="tel" name="mobiel" required /><span class="field-error"></span></div>
+              <div class="field"><label for="i-tel">Telefoon (vast)</label><input id="i-tel" type="tel" name="telefoon" /></div>
+            </div>
+            <div class="field"><label for="i-mail">E-mailadres *</label><input id="i-mail" type="email" name="email" required /><span class="field-error"></span></div>
+
+            <div class="step-actions">
+              <button type="button" class="btn btn-ghost" data-prev="1"><span class="arr" style="transform:rotate(180deg);">→</span> Vorige</button>
+              <button type="button" class="btn btn-primary" data-next="3">Volgende stap <span class="arr">→</span></button>
+            </div>
+          </section>
+
+          <!-- STAP 3: Verzekeringsgegevens -->
+          <section class="step-panel" data-panel="3">
+            <span class="eyebrow">Stap 3 van 6</span>
+            <h2>Verzekeringsgegevens</h2>
+
+            <div class="field">
+              <label for="i-verz">Zorgverzekeraar *</label>
+              <select id="i-verz" name="verzekeraar" required>
+                <option value="">Selecteer uw zorgverzekeraar</option>
+                <option>Achmea (Zilveren Kruis, Interpolis, FBTO, De Friesland)</option>
+                <option>VGZ (Univé, IZA, IZZ, Bewuzt)</option>
+                <option>CZ (CZ, OHRA, Nationale-Nederlanden)</option>
+                <option>Menzis (Menzis, Anderzorg, HEMA)</option>
+                <option>DSW</option>
+                <option>ONVZ</option>
+                <option>ASR</option>
+                <option>ENO (Salland, ZorgDirect, HollandZorg)</option>
+                <option>Zorg en Zekerheid</option>
+                <option>Anders</option>
+              </select>
+              <span class="field-error"></span>
+            </div>
+            <div class="field"><label for="i-vnaam">Naam verzekerde *</label><input id="i-vnaam" name="naam_verzekerde" required /><span class="field-error"></span></div>
+            <div class="field-row">
+              <div class="field"><label for="i-polis">Polisnummer *</label><input id="i-polis" name="polisnummer" required /><span class="field-error"></span></div>
+              <div class="field"><label for="i-begin">Begindatum verzekering</label><input id="i-begin" type="date" name="begindatum" /></div>
+            </div>
+
+            <div class="step-actions">
+              <button type="button" class="btn btn-ghost" data-prev="2"><span class="arr" style="transform:rotate(180deg);">→</span> Vorige</button>
+              <button type="button" class="btn btn-primary" data-next="4">Volgende stap <span class="arr">→</span></button>
+            </div>
+          </section>
+
+          <!-- STAP 4: Overig -->
+          <section class="step-panel" data-panel="4">
+            <span class="eyebrow">Stap 4 van 6</span>
+            <h2>Overig</h2>
+
+            <div class="field"><label for="i-laatste">Wanneer was uw laatste tandartsbezoek?</label><input id="i-laatste" name="laatste_bezoek" placeholder="Bijv. juni 2025 of meer dan 2 jaar geleden" /></div>
+            <div class="field"><label for="i-wensen">Tandheelkundige wensen of aandachtspunten</label><textarea id="i-wensen" name="wensen" placeholder="Bijv. esthetische wensen, angst voor de tandarts, klachten, gevoelige gebieden..."></textarea></div>
+
+            <div class="step-actions">
+              <button type="button" class="btn btn-ghost" data-prev="3"><span class="arr" style="transform:rotate(180deg);">→</span> Vorige</button>
+              <button type="button" class="btn btn-primary" data-next="5">Volgende stap <span class="arr">→</span></button>
+            </div>
+          </section>
+
+          <!-- STAP 5: Opmerkingen -->
+          <section class="step-panel" data-panel="5">
+            <span class="eyebrow">Stap 5 van 6</span>
+            <h2>Opmerkingen</h2>
+            <p class="sub">Heeft u nog iets dat u ons wilt laten weten? Denk aan medische bijzonderheden, voorkeuren of vragen.</p>
+
+            <div class="field"><label for="i-opm">Uw opmerkingen</label><textarea id="i-opm" name="opmerkingen" rows="6" placeholder="Optioneel"></textarea></div>
+
+            <div class="step-actions">
+              <button type="button" class="btn btn-ghost" data-prev="4"><span class="arr" style="transform:rotate(180deg);">→</span> Vorige</button>
+              <button type="button" class="btn btn-primary" data-next="6">Naar samenvatting <span class="arr">→</span></button>
+            </div>
+          </section>
+
+          <!-- STAP 6: Samenvatting -->
+          <section class="step-panel" data-panel="6">
+            <span class="eyebrow">Stap 6 van 6</span>
+            <h2>Samenvatting</h2>
+            <p class="sub">Controleer uw gegevens en bevestig de inschrijving.</p>
+
+            <dl class="summary-list" id="summary"></dl>
+
+            <div class="field" style="margin-top:24px;">
+              <label class="checkbox"><input type="checkbox" id="i-akkoord" required /> <span>Ik ga akkoord met de verwerking van mijn gegevens conform de <a href="privacy.html" style="color:var(--primary);text-decoration:underline;">privacyverklaring</a>. *</span></label>
+              <span class="field-error" id="akkoord-err"></span>
+            </div>
+
+            <div class="step-actions">
+              <button type="button" class="btn btn-ghost" data-prev="5"><span class="arr" style="transform:rotate(180deg);">→</span> Vorige</button>
+              <button type="submit" class="btn btn-primary">Inschrijving versturen <span class="arr">→</span></button>
+            </div>
+          </section>
+
+          <div class="form-success card" hidden style="margin-top:24px;border-color:var(--mint);background:var(--mint-50);">
+            <h3 style="margin-top:0;">Bedankt voor uw inschrijving!</h3>
+            <p>Wij hebben uw gegevens ontvangen en nemen zo spoedig mogelijk contact met u op om een eerste afspraak in te plannen.</p>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--paper-2);">
+    <div class="container container-narrow" style="text-align:center;">
+      <span class="eyebrow" style="justify-content:center;">Liever telefonisch inschrijven?</span>
+      <h2>Bel ons <em>tijdens openingstijden</em>.</h2>
+      <p>Onze balie helpt u graag persoonlijk verder met uw inschrijving.</p>
+      <a class="btn btn-primary" href="tel:0235583046" style="margin-top:16px;">023 558 30 46 <span class="arr">→</span></a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-brand">Tandartsen-<br/>praktijk <em>Vijfhuizen.</em></div><p style="color:var(--ink-300);max-width:36ch;">Persoonlijke, ervaren tandheelkundige zorg op Mient 55, Vijfhuizen. KNMT-geregistreerd.</p></div>
+      <div><h4>Praktijk</h4><ul><li><a href="praktijk.html">Onze praktijk</a></li><li><a href="team.html">Team</a></li><li><a href="specialisaties.html">Specialisaties</a></li><li><a href="vacature.html">Vacature</a></li><li><a href="klachten.html">Klachten</a></li></ul></div>
+      <div><h4>Patiënten</h4><ul><li><a href="afspraken.html">Afspraken</a></li><li><a href="inschrijven.html">Inschrijven</a></li><li><a href="wijzigingen.html">Wijzigingen doorgeven</a></li><li><a href="spoed.html">Spoed</a></li><li><a href="https://www.infomedics.nl/" target="_blank" rel="noopener">Nota online ↗</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li>Mient 55<br/>2141 TB Vijfhuizen</li><li><a href="tel:0235583046">023 558 30 46</a></li><li><a href="mailto:tandartsenpraktijkvijfhuizen@gmail.com">E-mail</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="yr"></span> Tandartsenpraktijk Vijfhuizen B.V.</span><div class="links"><a href="privacy.html">Privacy</a><a href="privacy.html#voorwaarden">Voorwaarden</a><a href="privacy.html#cookies">Cookies</a></div></div>
+  </div>
+</footer>
+
+<button class="to-top" aria-label="Terug naar boven"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/animations.js"></script>
+
+<script>
+(function() {
+  const form = document.getElementById('inschrijfForm');
+  if (!form) return;
+  const panels = form.querySelectorAll('.step-panel');
+
+  function setStep(n) {
+    panels.forEach(p => p.classList.toggle('is-active', +p.dataset.panel === n));
+    document.querySelector('.form-card').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function validatePanel(n) {
+    const panel = form.querySelector(`.step-panel[data-panel="${n}"]`);
+    let ok = true;
+    panel.querySelectorAll('[required]').forEach(input => {
+      const errEl = input.parentElement.querySelector('.field-error');
+      let msg = '';
+      if (!input.value.trim()) msg = 'Dit veld is verplicht.';
+      else if (input.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value)) msg = 'Geen geldig e-mailadres.';
+      else if (input.type === 'tel' && !/^[\d\s+()-]{7,}$/.test(input.value)) msg = 'Geen geldig telefoonnummer.';
+      else if (input.id === 'i-pc' && !/^\d{4}\s?[A-Za-z]{2}$/.test(input.value)) msg = 'Postcode bijv. 1234 AB.';
+      if (msg) {
+        ok = false;
+        input.setAttribute('aria-invalid', 'true');
+        if (errEl) errEl.textContent = msg;
+      } else {
+        input.setAttribute('aria-invalid', 'false');
+        if (errEl) errEl.textContent = '';
+      }
+    });
+    return ok;
+  }
+
+  function buildSummary() {
+    const get = id => (document.getElementById(id) || {}).value || '—';
+    const checked = name => {
+      const el = form.querySelector(`input[name="${name}"]:checked`);
+      return el ? el.value : '—';
+    };
+    const naam = [get('i-vl'), get('i-voor'), get('i-tussen'), get('i-achter')].filter(v => v && v !== '—').join(' ');
+    const html = `
+      <h4>Persoonsgegevens</h4>
+      <div class="row"><dt>Naam</dt><dd>${naam || '—'}</dd></div>
+      <div class="row"><dt>Geboortedatum</dt><dd>${get('i-geb')}</dd></div>
+      <div class="row"><dt>Geslacht</dt><dd>${checked('geslacht')}</dd></div>
+      <h4>Adres &amp; contact</h4>
+      <div class="row"><dt>Adres</dt><dd>${get('i-straat')} ${get('i-huis')}</dd></div>
+      <div class="row"><dt>Postcode / plaats</dt><dd>${get('i-pc')} · ${get('i-plaats')}</dd></div>
+      <div class="row"><dt>Mobiel</dt><dd>${get('i-mob')}</dd></div>
+      <div class="row"><dt>Telefoon</dt><dd>${get('i-tel')}</dd></div>
+      <div class="row"><dt>E-mail</dt><dd>${get('i-mail')}</dd></div>
+      <h4>Verzekering</h4>
+      <div class="row"><dt>Zorgverzekeraar</dt><dd>${get('i-verz')}</dd></div>
+      <div class="row"><dt>Naam verzekerde</dt><dd>${get('i-vnaam')}</dd></div>
+      <div class="row"><dt>Polisnummer</dt><dd>${get('i-polis')}</dd></div>
+      <div class="row"><dt>Begindatum</dt><dd>${get('i-begin')}</dd></div>
+      <h4>Overig &amp; opmerkingen</h4>
+      <div class="row"><dt>Laatste bezoek</dt><dd>${get('i-laatste')}</dd></div>
+      <div class="row"><dt>Wensen</dt><dd>${get('i-wensen')}</dd></div>
+      <div class="row"><dt>Opmerkingen</dt><dd>${get('i-opm')}</dd></div>
+    `;
+    document.getElementById('summary').innerHTML = html;
+  }
+
+  form.querySelectorAll('[data-next]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const cur = +btn.closest('.step-panel').dataset.panel;
+      if (!validatePanel(cur)) {
+        const inv = form.querySelector('.step-panel.is-active [aria-invalid="true"]');
+        if (inv) inv.focus();
+        return;
+      }
+      const next = +btn.dataset.next;
+      if (next === 6) buildSummary();
+      setStep(next);
+    });
+  });
+  form.querySelectorAll('[data-prev]').forEach(btn => {
+    btn.addEventListener('click', () => setStep(+btn.dataset.prev));
+  });
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const akkoord = document.getElementById('i-akkoord');
+    const errA = document.getElementById('akkoord-err');
+    if (!akkoord.checked) {
+      errA.textContent = 'U moet akkoord gaan om door te gaan.';
+      return;
+    }
+    errA.textContent = '';
+    let allOk = true;
+    [1,2,3].forEach(n => { if (!validatePanel(n)) allOk = false; });
+    if (!allOk) { setStep(1); return; }
+    const ok = form.querySelector('.form-success');
+    form.querySelectorAll('.step-panel').forEach(el => el.style.display = 'none');
+    ok.hidden = false;
+    ok.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+})();
+</script>
+</body>
+</html>

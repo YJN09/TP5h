@@ -1,0 +1,64 @@
+:root {
+  /* Color tokens — clean medisch met editorial warmth */
+  --ink-900: #0A1F2C;
+  --ink-700: #1F3A4D;
+  --ink-500: #45617A;
+  --ink-300: #8AA0B2;
+
+  --paper: #FBFAF7;
+  --paper-2: #F3F1EC;
+  --white: #FFFFFF;
+  --line: #E4E1D9;
+  --line-2: #D4D0C5;
+
+  --primary: #0B6E99;
+  --primary-700: #075877;
+  --primary-50: #E8F2F7;
+
+  --mint: #7DD3C0;
+  --mint-50: #E6F6F1;
+
+  --gold: #C9A961;
+  --warn: #B45309;
+
+  /* Type */
+  --font-display: "Schibsted Grotesk", "Inter", -apple-system, system-ui, sans-serif;
+  --font-body: "Instrument Sans", "Inter", -apple-system, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Spacing scale */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+  --s-9: 96px;
+  --s-10: 128px;
+
+  /* Radius */
+  --r-sm: 6px;
+  --r-md: 12px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+  --r-pill: 999px;
+
+  /* Shadow */
+  --sh-1: 0 1px 2px rgba(10,31,44,.04), 0 2px 8px rgba(10,31,44,.04);
+  --sh-2: 0 4px 12px rgba(10,31,44,.06), 0 12px 32px rgba(10,31,44,.06);
+  --sh-3: 0 24px 60px rgba(10,31,44,.10);
+
+  /* Motion */
+  --ease: cubic-bezier(.22,1,.36,1);
+  --ease-in: cubic-bezier(.7,0,.84,0);
+  --t-fast: 200ms;
+  --t-med: 450ms;
+  --t-slow: 800ms;
+
+  /* Layout */
+  --container: 1240px;
+  --container-narrow: 880px;
+  --header-h: 80px;
+}
