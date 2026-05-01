@@ -64,7 +64,8 @@
         <h2>Wijzigingsformulier</h2>
         <p class="sub">Velden met een * zijn verplicht. Wij verwerken uw gegevens vertrouwelijk volgens onze <a href="privacy.html" style="color:var(--primary);text-decoration:underline;">privacyverklaring</a>.</p>
 
-        <form data-validate action="mailto:tandartsenpraktijkvijfhuizen@gmail.com" method="post" enctype="text/plain">
+        <form name="wijzigingen" data-netlify="true" data-validate method="post">
+          <input type="hidden" name="form-name" value="wijzigingen" />
 
           <div class="form-section">
             <h3>Uw gegevens</h3>

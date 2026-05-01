@@ -568,6 +568,35 @@
 .cta-band .actions { display: flex; flex-direction: column; gap: 12px; align-items: stretch; position: relative; }
 @media (max-width: 800px) { .cta-band { padding: 40px 32px; grid-template-columns: 1fr; } }
 
+/* ============ PRIVACY PAGE ============ */
+.legal-block {
+  padding: 56px 0;
+  border-top: 1px solid var(--line);
+  scroll-margin-top: calc(var(--header-h) + 24px);
+}
+.legal-block:first-of-type { border-top: 0; padding-top: 0; }
+.legal-block h2 { font-size: clamp(28px, 3vw, 40px); margin-bottom: 24px; }
+.legal-block h3 {
+  font-size: 18px; font-family: var(--font-body); font-weight: 600;
+  letter-spacing: .04em; text-transform: uppercase; color: var(--ink-500);
+  margin: 32px 0 12px;
+}
+.legal-block p { color: var(--ink-700); margin-bottom: 16px; line-height: 1.7; }
+.legal-block ul {
+  margin: 0 0 16px; padding-left: 0; list-style: none;
+  display: grid; gap: 8px;
+}
+.legal-block ul li {
+  display: flex; gap: 12px; align-items: flex-start;
+  color: var(--ink-700); line-height: 1.6;
+}
+.legal-block ul li::before {
+  content: ""; flex: 0 0 6px; width: 6px; height: 6px;
+  border-radius: 50%; background: var(--primary);
+  margin-top: 11px;
+}
+.legal-block a { color: var(--primary); text-decoration: underline; text-underline-offset: 2px; }
+
 /* ============ VACATURE PAGE ============ */
 .vac-card {
   background: var(--white);

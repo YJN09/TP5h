@@ -64,7 +64,7 @@
           <div class="row"><dt>Adres</dt><dd>Mient 55<br/>2141 TB Vijfhuizen</dd></div>
           <div class="row"><dt>Telefoon</dt><dd><a href="tel:0235583046">023 558 30 46</a></dd></div>
           <div class="row"><dt>E-mail</dt><dd><a href="mailto:tandartsenpraktijkvijfhuizen@gmail.com">tandartsenpraktijkvijfhuizen@<br/>gmail.com</a></dd></div>
-          <div class="row"><dt>Openingstijden</dt><dd>Ma — Do · 08:00 — 17:00<br/>Vrijdag · 08:00 — 12:00<br/>Pauze · 12:30 — 13:15</dd></div>
+          <div class="row"><dt>Openingstijden</dt><dd>Ma — Vr · 08:00 — 12:30 · 13:15 — 17:00</dd></div>
           <div class="row"><dt>Spoed</dt><dd>Buiten openingstijden — <a href="spoed.html">avond- en weekenddienst</a></dd></div>
         </dl>
         <div class="location-map" data-reveal="right">
@@ -81,7 +81,8 @@
         <h2>Stel uw vraag.</h2>
         <p class="sub">Velden met een * zijn verplicht. Wij verwerken uw gegevens vertrouwelijk volgens onze <a href="privacy.html" style="color:var(--primary);text-decoration:underline;">privacyverklaring</a>.</p>
 
-        <form data-validate action="mailto:tandartsenpraktijkvijfhuizen@gmail.com" method="post" enctype="text/plain">
+        <form name="contact" data-netlify="true" data-validate method="post">
+          <input type="hidden" name="form-name" value="contact" />
           <div class="field-row">
             <div class="field"><label for="c-voor">Voornaam *</label><input id="c-voor" name="voornaam" required /><span class="field-error"></span></div>
             <div class="field"><label for="c-achter">Achternaam *</label><input id="c-achter" name="achternaam" required /><span class="field-error"></span></div>

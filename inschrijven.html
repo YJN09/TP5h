@@ -61,7 +61,8 @@
     <div class="container">
       <div class="form-card">
 
-        <form id="inschrijfForm" action="mailto:tandartsenpraktijkvijfhuizen@gmail.com" method="post" enctype="text/plain" novalidate>
+        <form id="inschrijfForm" name="inschrijving" data-netlify="true" method="post" novalidate>
+          <input type="hidden" name="form-name" value="inschrijving" />
 
           <!-- STAP 1: Persoonsgegevens -->
           <section class="step-panel is-active" data-panel="1">
