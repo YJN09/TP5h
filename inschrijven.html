@@ -192,7 +192,7 @@
             <dl class="summary-list" id="summary"></dl>
 
             <div class="field" style="margin-top:24px;">
-              <label class="checkbox"><input type="checkbox" id="i-akkoord" required /> <span>Ik ga akkoord met de verwerking van mijn gegevens conform de <a href="privacy.html" style="color:var(--primary);text-decoration:underline;">privacyverklaring</a>. *</span></label>
+              <label class="checkbox"><input type="checkbox" id="i-akkoord" name="akkoord" value="ja" required /> <span>Ik ga akkoord met de verwerking van mijn gegevens conform de <a href="privacy.html" style="color:var(--primary);text-decoration:underline;">privacyverklaring</a>. *</span></label>
               <span class="field-error" id="akkoord-err"></span>
             </div>
 
@@ -336,10 +336,26 @@
     let allOk = true;
     [1,2,3].forEach(n => { if (!validatePanel(n)) allOk = false; });
     if (!allOk) { setStep(1); return; }
-    const ok = form.querySelector('.form-success');
-    form.querySelectorAll('.step-panel').forEach(el => el.style.display = 'none');
-    ok.hidden = false;
-    ok.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+    // Submit naar Netlify Forms via AJAX
+    const submitBtn = form.querySelector('button[type="submit"]');
+    if (submitBtn) { submitBtn.disabled = true; submitBtn.style.opacity = '.6'; }
+    const formData = new FormData(form);
+    const body = new URLSearchParams(formData).toString();
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body
+    }).then(res => {
+      if (!res.ok) throw new Error('Netwerkfout');
+      const ok = form.querySelector('.form-success');
+      form.querySelectorAll('.step-panel').forEach(el => el.style.display = 'none');
+      ok.hidden = false;
+      ok.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }).catch(() => {
+      if (submitBtn) { submitBtn.disabled = false; submitBtn.style.opacity = ''; }
+      alert('Er ging iets mis bij het versturen. Probeer het opnieuw of bel ons op 023 558 30 46.');
+    });
   });
 })();
 </script>
