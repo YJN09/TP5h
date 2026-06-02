@@ -3,11 +3,10 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Inschrijven — Tandartsenpraktijk Vijfhuizen</title>
+<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+<title>Inschrijven als nieuwe patiënt | Tandartsenpraktijk Vijfhuizen</title>
 <meta name="description" content="Schrijf u in als nieuwe patiënt bij Tandartsenpraktijk Vijfhuizen — vul het inschrijfformulier in zes overzichtelijke stappen in." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/fonts.css" />
 <link rel="stylesheet" href="assets/css/tokens.css" />
 <link rel="stylesheet" href="assets/css/base.css" />
 <link rel="stylesheet" href="assets/css/components.css" />
@@ -18,13 +17,13 @@
 
 <header class="site-header">
   <div class="container">
-    <a class="brand" href="index.html"><span class="mark">v</span><span>Vijfhuizen<small>Tandartsenpraktijk</small></span></a>
+    <a class="brand" href="index.html"><img class="brand-logo" src="assets/img/logo-mark.png" alt="Tandartsenpraktijk Vijfhuizen" /><span>Vijfhuizen<small>Tandartsenpraktijk</small></span></a>
     <nav class="nav" aria-label="Hoofdmenu"><a href="index.html">Home</a>
-      <div class="nav-item"><a href="praktijk.html" class="nav-trigger">Onze praktijk</a><div class="dropdown"><a href="praktijk.html">Onze praktijk</a><a href="praktijk.html#missie">Missie &amp; visie</a><a href="team.html">Team</a><a href="afspraken.html">Afspraken</a><a href="klachten.html">Klachten</a><a href="wijzigingen.html">Wijzigingen doorgeven</a></div></div>
+      <div class="nav-item"><a href="praktijk.html" class="nav-trigger">Onze praktijk</a><div class="dropdown"><a href="praktijk.html">Onze praktijk</a><a href="praktijk.html#missie">Missie &amp; visie</a><a href="team.html">Team</a><a href="afspraken.html">Afspraken</a><a href="klachten.html">Klachten</a></div></div>
       <a href="specialisaties.html">Specialisaties</a>
       <a href="https://www.infomedics.nl/" target="_blank" rel="noopener">Nota online</a>
       <a href="https://www.plein.nl/verzorging/mondverzorging/" target="_blank" rel="noopener">Online winkel</a>
-      <div class="nav-item"><a href="contact.html" class="nav-trigger">Contact</a><div class="dropdown"><a href="contact.html">Contact</a><a href="spoed.html">Spoed</a><a href="inschrijven.html">Inschrijven</a></div></div>
+      <div class="nav-item"><a href="contact.html" class="nav-trigger">Contact</a><div class="dropdown"><a href="contact.html">Contact</a><a href="spoed.html">Spoed</a><a href="inschrijven.html">Inschrijven</a><a href="wijzigingen.html">Wijzigingen doorgeven</a></div></div>
       <a href="vacature.html">Vacature</a>
     </nav>
     <div class="header-cta">
@@ -37,11 +36,11 @@
 
 <aside class="mobile-drawer" aria-label="Mobiel menu">
   <nav>
-    <details><summary>Praktijk +</summary><a href="praktijk.html">Onze praktijk</a><a href="team.html">Team</a><a href="afspraken.html">Afspraken</a><a href="klachten.html">Klachten</a><a href="wijzigingen.html">Wijzigingen</a></details>
+    <details><summary>Praktijk +</summary><a href="praktijk.html">Onze praktijk</a><a href="team.html">Team</a><a href="afspraken.html">Afspraken</a><a href="klachten.html">Klachten</a></details>
     <a href="specialisaties.html">Specialisaties</a>
     <a href="https://www.infomedics.nl/" target="_blank" rel="noopener">Nota online</a>
     <a href="https://www.plein.nl/verzorging/mondverzorging/" target="_blank" rel="noopener">Online winkel</a>
-    <details><summary>Contact +</summary><a href="contact.html">Contact</a><a href="spoed.html">Spoed</a><a href="inschrijven.html">Inschrijven</a></details>
+    <details><summary>Contact +</summary><a href="contact.html">Contact</a><a href="spoed.html">Spoed</a><a href="inschrijven.html">Inschrijven</a><a href="wijzigingen.html">Wijzigingen doorgeven</a></details>
     <a href="vacature.html">Vacature</a>
   </nav>
 </aside>
@@ -61,8 +60,9 @@
     <div class="container">
       <div class="form-card">
 
-        <form id="inschrijfForm" name="inschrijving" data-netlify="true" method="post" novalidate>
+        <form id="inschrijfForm" name="inschrijving" data-netlify="true" data-netlify-honeypot="bot-field" method="post" novalidate>
           <input type="hidden" name="form-name" value="inschrijving" />
+          <p class="hp-field" aria-hidden="true"><label>Laat dit veld leeg <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
 
           <!-- STAP 1: Persoonsgegevens -->
           <section class="step-panel is-active" data-panel="1">
@@ -231,17 +231,23 @@
       <div><h4>Patiënten</h4><ul><li><a href="afspraken.html">Afspraken</a></li><li><a href="inschrijven.html">Inschrijven</a></li><li><a href="wijzigingen.html">Wijzigingen doorgeven</a></li><li><a href="spoed.html">Spoed</a></li><li><a href="https://www.infomedics.nl/" target="_blank" rel="noopener">Nota online ↗</a></li></ul></div>
       <div><h4>Contact</h4><ul><li>Mient 55<br/>2141 TB Vijfhuizen</li><li><a href="tel:0235583046">023 558 30 46</a></li><li><a href="mailto:tandartsenpraktijkvijfhuizen@gmail.com">E-mail</a></li></ul></div>
     </div>
-    <div class="footer-bottom"><span>© <span id="yr"></span> Tandartsenpraktijk Vijfhuizen B.V.</span><div class="links"><a href="privacy.html">Privacy</a><a href="privacy.html#voorwaarden">Voorwaarden</a><a href="privacy.html#cookies">Cookies</a></div></div>
+    <div class="footer-bottom"><span>© <span id="yr"></span> Tandartsenpraktijk Vijfhuizen B.V.</span><div class="links"><a href="privacy.html">Privacy</a><a href="privacy.html#voorwaarden">Voorwaarden</a><a href="privacy.html#cookies">Cookies</a><a href="#" data-cookie-settings>Cookievoorkeuren</a></div></div>
   </div>
 </footer>
+
+<div class="cookie-banner">
+  <strong>Cookies &amp; externe diensten</strong>
+  <p style="margin:0;">Wij gebruiken alleen functionele cookies. Externe diensten zoals Google Maps laden we uitsluitend met uw toestemming. Lees meer in onze <a href="privacy.html#cookies" style="color:var(--mint);">privacyverklaring</a>.</p>
+  <div class="actions">
+    <button class="btn btn-mint" data-cookie="accept">Akkoord</button>
+    <button class="btn btn-ghost" style="color:var(--paper);border-color:rgba(255,255,255,.2);" data-cookie="decline">Weigeren</button>
+  </div>
+</div>
 
 <button class="to-top" aria-label="Terug naar boven"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 
 <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/animations.js"></script>
+<script src="assets/js/consent.js"></script>
 
 <script>
 (function() {

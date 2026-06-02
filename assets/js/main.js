@@ -34,18 +34,7 @@ if (burger && drawer) {
 const toTop = document.querySelector('.to-top');
 if (toTop) toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-// Cookie banner
-const cookieKey = 'tpv-cookie-consent';
-const banner = document.querySelector('.cookie-banner');
-if (banner && !localStorage.getItem(cookieKey)) {
-  setTimeout(() => banner.classList.add('is-show'), 800);
-  banner.querySelectorAll('[data-cookie]').forEach(b => {
-    b.addEventListener('click', () => {
-      localStorage.setItem(cookieKey, b.dataset.cookie);
-      banner.classList.remove('is-show');
-    });
-  });
-}
+// Cookie banner + blokkade van externe diensten wordt afgehandeld in consent.js
 
 // Team filter chips
 const chips = document.querySelectorAll('.team-filters .chip');
