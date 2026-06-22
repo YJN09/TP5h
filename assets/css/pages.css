@@ -191,7 +191,7 @@
 }
 .team-card:hover { transform: translateY(-6px); }
 .team-card .avatar {
-  flex: 1; display: grid; place-items: center;
+  flex: 1; min-height: 0; display: grid; place-items: center; overflow: hidden;
   font-family: var(--font-display); font-style: italic; font-size: 96px;
   color: var(--ink-900); opacity: .15;
 }
