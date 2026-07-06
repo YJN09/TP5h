@@ -1,0 +1,5 @@
+.claude/
+scratchpad/
+*.tmp
+Thumbs.db
+.DS_Store
