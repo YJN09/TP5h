@@ -71,12 +71,14 @@
   display: flex; align-items: center;
   transition: background var(--t-med) var(--ease), box-shadow var(--t-med) var(--ease), border-color var(--t-med) var(--ease);
   border-bottom: 1px solid transparent;
-}
-.site-header.is-scrolled {
-  background: rgba(251, 250, 247, .85);
+  background: rgba(251, 250, 247, .72);
   backdrop-filter: saturate(180%) blur(14px);
   -webkit-backdrop-filter: saturate(180%) blur(14px);
+}
+.site-header.is-scrolled {
+  background: rgba(251, 250, 247, .9);
   border-bottom-color: var(--line);
+  box-shadow: 0 1px 24px rgba(10, 31, 44, .06);
 }
 .site-header .container {
   display: flex; align-items: center; justify-content: space-between; gap: 24px;
